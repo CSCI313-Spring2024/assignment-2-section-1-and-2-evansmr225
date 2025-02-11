@@ -1,0 +1,98 @@
+/* Changes font of paragraphs within the main section of site to Verdana */
+main p{
+    font-family: Verdana, sans-serif;
+}
+
+/* Sets top and bottom margins for h1 and h2 headers */
+main h1{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+main h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Puts profile picture in center of screen and adjusts its maxwidth and height */
+#profilePicture{
+    max-width: 100vw;
+    max-height: 100vh;
+    object-fit: center;
+    margin: auto;
+    display: block;
+}
+
+#favoriteWebsites{
+    a{
+        color: #3498db; /* Link color */
+        text-decoration: none; /* Remove underline */
+        font-weight: bold; /* Make the font bold */
+        font-size: 18px; /* Adjust font size */
+        transition: all 0.3s ease; /* Smooth transition for effects */
+    }
+    
+    a:hover{
+        color: #e74c3c; /* Change color on hover */
+        text-decoration: underline; /* Add underline on hover */
+        transform: scale(1.1); /* Slightly enlarge on hover */
+    }
+}
+
+
+
+#hobbies{
+    /* Makes hobbies appear to be in their own box */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    /* Makes the text in hobbies box larger with cursive Pacifico font */
+    h2 {
+        margin-top: 5rem;
+        font-family: 'Pacifico', cursive;
+        font-size: 3rem;
+    }
+
+    li {
+        font-family: 'Pacifico', cursive;
+        font-size: 2rem;
+    }
+}
+
+/* Used for changing color of courousel background */
+@keyframes colorChange{
+    0% { background-color: #f4f4f4; } /* Light Gray */
+    25% { background-color: #fafafa; } /* Off-White */
+    50% { background-color: #f7f1e1; } /* Light Beige */
+    75% { background-color: #e0f2f1; } /* Soft Mint Green */
+    100% { background-color: #f4f4f4; } /* Light Gray (cycle back) */
+}
+
+
+/* Sets size of images inside carousel exactly to ensure they are all consistent */
+.carousel-item img{
+    width: 80vh;
+    height: 60vh;
+} 
+
+/* Makes the inner container size match that of the image, this container exists to ensure the carousel keeps the same size on transitions */
+.carousel-inner-container{
+    width: 80vh;
+    height: 60vh;
+}
+
+/*  */
+.carousel-container{
+    /*centers all carousel images and sets the height of the container*/
+    display: grid;
+    place-items: center;
+    height: 80vh;
+    /*Sets background color for carousel and makes it change using the color change animation*/
+    background-color: blue;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: colorChange 6s infinite;
+}
+
+
+
