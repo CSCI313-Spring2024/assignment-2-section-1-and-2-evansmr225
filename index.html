@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <header>
+      <!--The navbar which collapses into a hamburger menu when the screen size is too small-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#home">Matthew Evans Portfolio Site</a>
+          <!-- Toggler button for mobile screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <!--Navbar links-->
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Banner-->
+    <div class="bg-primary text-white text-center py-5">
+      <h1>Welcome to My Website</h1>
+      <p>Prepare to see all the cool things I have accomplished.</p>
+    </div>
+
+    <!--The main content of the page is part of a bootstrap container which helps resize it and puts it away from the edges of teh screen on larger screens-->
+    <main class="container mt-5">
+      <!--Banner-->
+      <section id="home">
+        <img
+          id="profilePicture"
+          src="./images/profilepicture.JPG"
+          alt="Profile Image"
+        />
+
+        <!--Biography Text-->
+        <article>
+          <h2>Bio</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            consectetur blanditiis vitae, in dolorum natus asperiores ut
+            reprehenderit praesentium! Optio voluptas officiis, perferendis
+            doloribus sit quam! Deleniti quod accusantium aliquam nihil a
+            repudiandae ab explicabo commodi, dolor nostrum deserunt non
+            quaerat, reprehenderit incidunt accusamus et numquam quae nisi, illo
+            exercitationem error nesciunt! Quis sit repellat accusantium
+            consequuntur at, atque ipsam deserunt omnis, rem id inventore ut.
+            Beatae, temporibus quisquam sequi perspiciatis neque quas accusamus
+            ipsam reiciendis, libero velit cupiditate similique autem dolore
+            doloremque animi amet provident? Tempore excepturi at est deleniti
+            vero, explicabo assumenda ratione similique ducimus, delectus rerum
+            totam.
+          </p>
+        </article>
+
+        <!--Contact Information-->
+        <h2>Contact Information</h2>
+        <address>
+          123 Ordon Avenue, Fargo, ND <br />
+          Email: matthew.r.evans@ndsu.edu
+        </address>
+      </section>
+
+      <!--About Me Section-->
+      <section id="about">
+        <h1>About Me</h1>
+        <!--Personal Background Text-->
+        <article>
+          <h2>Personal Background</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            consectetur blanditiis vitae, in dolorum natus asperiores ut
+            reprehenderit praesentium! Optio voluptas officiis, perferendis
+            doloribus sit quam! Deleniti quod accusantium aliquam nihil a
+            repudiandae ab explicabo commodi, dolor nostrum deserunt non
+            quaerat, reprehenderit incidunt accusamus et numquam quae nisi, illo
+            exercitationem error nesciunt! Quis sit repellat accusantium
+            consequuntur at, atque ipsam deserunt omnis, rem id inventore ut.
+            Beatae, temporibus quisquam sequi perspiciatis neque quas accusamus
+            ipsam reiciendis, libero velit cupiditate similique autem dolore
+            doloremque animi amet provident? Tempore excepturi at est deleniti
+            vero, explicabo assumenda ratione similique ducimus, delectus rerum
+            totam.
+          </p>
+        </article>
+
+        <!--Educational and professional background text-->
+        <article>
+          <h2>Educational and Professional Background</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+            consectetur blanditiis vitae, in dolorum natus asperiores ut
+            reprehenderit praesentium! Optio voluptas officiis, perferendis
+            doloribus sit quam! Deleniti quod accusantium aliquam nihil a
+            repudiandae ab explicabo commodi, dolor nostrum deserunt non
+            quaerat, reprehenderit incidunt accusamus et numquam quae nisi, illo
+            exercitationem error nesciunt! Quis sit repellat accusantium
+            consequuntur at, atque ipsam deserunt omnis, rem id inventore ut.
+            Beatae, temporibus quisquam sequi perspiciatis neque quas accusamus
+            ipsam reiciendis, libero velit cupiditate similique autem dolore
+            doloremque animi amet provident? Tempore excepturi at est deleniti
+            vero, explicabo assumenda ratione similique ducimus, delectus rerum
+            totam.
+          </p>
+        </article>
+
+        <!--Favorite websites text-->
+        <article id="favoriteWebsites">
+          <h2>Favorite Websites</h2>
+          <ul>
+            <li><a href="https://www.nintendo.com/us/">Nintendo</a></li>
+            <li>
+              <a href="https://www.ndsu.edu/">North Dakota State University</a>
+            </li>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+          </ul>
+        </article>
+
+        <!--Hobbies box-->
+        <article id="hobbies">
+          <h2 class="text-center">Interests and Hobbies</h2>
+          <div class="row justify-content-center">
+            <div class="col-md-4">
+              <h3>Fun activities I enjoy</h3>
+              <ol type="1">
+                <li>Running</li>
+                <li>Lifting Weights</li>
+                <li>Playing Videogames</li>
+                <li>Reading Books</li>
+              </ol>
+            </div>
+            <div class="col-md-4">
+              <h3>Favorite Movies</h3>
+              <ul>
+                <li>Oppenheimer</li>
+                <li>Dune Part 2</li>
+                <li>Super Mario Movie</li>
+                <li>Star Wars The Last Hope</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <h2>Activity Images</h2>
+
+        <!--Activites images carousel-->
+        <div class="carousel-container">
+          <div class="carousel-inner-container">
+            <div
+              id="aboutCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./images/ndsu.jpg" alt="School" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/running.png" alt="Programming" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/weights.png" alt="Weights" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./images/videogames.png" alt="Videogames" />
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#aboutCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#aboutCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Night sky video-->
+        <h2>I really like space and astronomy.</h2>
+        <video width="100%" height="auto" autoplay muted>
+          <source src="./videos/nightsky.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
+      <!--Portfolio section-->
+      <section>
+        <h1 id="portfolio">Portfolio</h1>
+        <h2>A showcase of all the projects I worked hard on.</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+          dignissimos quis soluta pariatur aliquam ullam laborum et eligendi
+          delectus, consequatur error veritatis exercitationem maiores cum id
+          odit laudantium natus. Hic aperiam alias enim assumenda unde quia
+          corrupti deserunt iure, perspiciatis nihil id explicabo deleniti ex
+          vitae esse dolores recusandae quasi!
+        </p>
+
+        <!--Project cards-->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/platformer.png"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">2D Pygame Platformer</h5>
+                <p class="card-text">
+                  A side-scrolling platformer built using Pygame.
+                </p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/spacegame.jpg"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">2D Space Game</h5>
+                <p class="card-text">
+                  A space game built using the Unity game engine.
+                </p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="./images/error.png"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Example Project</h5>
+                <p class="card-text">
+                  An example of a project which does not currently exist.
+                </p>
+                <a href="#" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Achievments text-->
+        <h2>Achievments</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe hic
+          quasi excepturi illo eaque officiis optio exercitationem ea debitis?
+          Neque porro placeat corrupti facere? Quidem consequatur nihil velit,
+          impedit deserunt repudiandae aliquam qui reprehenderit ad omnis sequi
+          totam. Aliquam necessitatibus obcaecati excepturi architecto fuga,
+          totam expedita aliquid sit repellat exercitationem.
+        </p>
+      </section>
+
+      <!--Weekly schedule using bootstrap's table-->
+      <h1>Weekly Schedule</h1>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered mt-3">
+          <thead class="table-dark">
+            <tr>
+              <th>Time</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>8:00 - 9:00</td>
+              <td>Gym</td>
+              <td>Gym</td>
+              <td>Gym</td>
+              <td>Gym</td>
+              <td>Gym</td>
+            </tr>
+            <tr>
+              <td>9:00 - 12:00</td>
+              <td>Class</td>
+              <td>Study</td>
+              <td>Study</td>
+              <td>Gym</td>
+              <td>Class</td>
+            </tr>
+            <tr>
+              <td>12:00 - 5:00</td>
+              <td>Work</td>
+              <td>Study</td>
+              <td>Work</td>
+              <td>Study</td>
+              <td>Work</td>
+            </tr>
+            <tr>
+              <td>5:00 - 10:00</td>
+              <td>Study</td>
+              <td>Study</td>
+              <td>Study</td>
+              <td>Study</td>
+              <td>Study</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--Contact form-->
+      <h1 id="contact">Contact Me</h1>
+      <p>You can reach me by using the form below.</p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="bg-dark text-white py-3 mt-5">
+      <div class="container text-center">
+        <p>&copy; 2025 Matthew Evans. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
