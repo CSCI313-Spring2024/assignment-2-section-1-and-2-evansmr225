@@ -326,35 +326,35 @@
           <tbody>
             <tr>
               <td>8:00 - 9:00</td>
-              <td>Gym</td>
-              <td>Gym</td>
-              <td>Gym</td>
-              <td>Gym</td>
-              <td>Gym</td>
+              <td class="table-primary">Gym</td>
+              <td class="table-primary">Gym</td>
+              <td class="table-primary">Gym</td>
+              <td class="table-primary">Gym</td>
+              <td class="table-primary">Gym</td>
             </tr>
             <tr>
               <td>9:00 - 12:00</td>
-              <td>Class</td>
-              <td>Study</td>
-              <td>Study</td>
-              <td>Gym</td>
-              <td>Class</td>
+              <td class="table-danger">Class</td>
+              <td class="table-warning">Study</td>
+              <td class="table-danger">Class</td>
+              <td class="table-warning">Study</td>
+              <td class="table-danger">Class</td>
             </tr>
             <tr>
               <td>12:00 - 5:00</td>
-              <td>Work</td>
-              <td>Study</td>
-              <td>Work</td>
-              <td>Study</td>
-              <td>Work</td>
+              <td class="table-info">Work</td>
+              <td class="table-danger">Class</td>
+              <td class="table-info">Work</td>
+              <td class="table-danger">Class</td>
+              <td class="table-info">Work</td>
             </tr>
             <tr>
               <td>5:00 - 10:00</td>
-              <td>Study</td>
-              <td>Study</td>
-              <td>Study</td>
-              <td>Study</td>
-              <td>Study</td>
+              <td class="table-warning">Study</td>
+              <td class="table-warning">Study</td>
+              <td class="table-warning">Study</td>
+              <td class="table-warning">Study</td>
+              <td class="table-warning">Study</td>
             </tr>
           </tbody>
         </table>
@@ -366,7 +366,7 @@
 
       <div class="row justify-content-center">
         <div class="col-md-6">
-          <form>
+          <form class="needs-validation" novalidate>
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
               <input
@@ -376,7 +376,9 @@
                 placeholder="Your Name"
                 required
               />
+              <div class="invalid-feedback">Please enter your name.</div>
             </div>
+
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
               <input
@@ -386,7 +388,11 @@
                 placeholder="Your Email"
                 required
               />
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
             </div>
+
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
               <textarea
@@ -396,7 +402,9 @@
                 placeholder="Your Message"
                 required
               ></textarea>
+              <div class="invalid-feedback">Please enter a message.</div>
             </div>
+
             <button type="submit" class="btn btn-primary w-100">
               Send Message
             </button>
@@ -404,6 +412,30 @@
         </div>
       </div>
     </main>
+
+    <!--Script to validate bootstrap forms including the contact form used above-->
+    <script>
+      // Prevent form submission if invalid
+      (function () {
+        const form = document.querySelector(".needs-validation");
+        form.addEventListener(
+          "submit",
+          function (event) {
+            // if the form is not valid
+            if (!form.checkValidity()) {
+              // stop the form from submitting
+              event.preventDefault();
+              // stop event from propogating upward toward parent elements
+              event.stopPropagation();
+            }
+
+            // add Bootstrap's "was-validated" class to show validation styles
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      })();
+    </script>
 
     <!--Footer-->
     <footer class="bg-dark text-white py-3 mt-5">
